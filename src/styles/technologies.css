@@ -20,7 +20,7 @@
 }
 
 .divImagesTech {
-  text-align: center;
+  text-align: center !important;
   font-family: "Raleway", sans-serif;
   font-style: oblique;
   font-weight: bold;
@@ -29,4 +29,9 @@
 .imgTech {
   height: auto;
   width: 7rem;
+}
+
+.divImagesTech > p{
+  text-align: center !important;
+  margin-top: 1rem;
 }

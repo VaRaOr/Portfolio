@@ -1,0 +1,67 @@
+[ 
+	{
+		"name": "Html5",
+		"img": "https://i.imgur.com/ZT1yqQK.png",
+		"id" :"1"
+	},
+	{
+		"name": "Css",
+		"img": "https://i.imgur.com/0wW2i5h.png",
+		"id" :"2"
+	},
+	{
+		"name": "Bootstrap",
+		"img": "https://i.imgur.com/8x1ObW3.png",
+		"id" :"3"
+	},
+	{
+		"name": "JavaScript",
+		"img": "https://i.imgur.com/bqD8h7N.png",
+		"id" :"4"
+	},
+	{
+		"name": "Git",
+		"img": "https://i.imgur.com/Foh9riZ.png",
+		"id" :"5"
+	},
+    {
+		"name": "Github",
+		"img": "https://i.imgur.com/uYkKsKt.png",
+		"id" :"6"
+	},
+    {
+		"name": "MongoDB",
+		"img": "https://i.imgur.com/jsVhzFk.png",
+		"id" :"7"
+	},
+    {
+		"name": "ExpressJS",
+		"img": "https://i.imgur.com/eWkHdNN.png",
+		"id" :"8"
+	},
+    {
+		"name": "ReactJS",
+		"img": "https://i.imgur.com/lxLyagi.png",
+		"id" :"9"
+	},
+    {
+        "name": "NodeJS",
+        "img": "https://i.imgur.com/psfPyNs.png",
+        "id" :"10"
+    },
+    {
+		"name": "Redux",
+		"img": "https://i.imgur.com/Pz1HAXW.png",
+		"id" :"11"
+	},
+    {
+		"name": "Mui",
+		"img": "https://i.imgur.com/dObpLbx.png",
+		"id" :"12"
+	},
+    {
+		"name": "Heroku",
+		"img": "https://i.imgur.com/fm6ctJI.png",
+		"id" :"13"
+	}
+]
