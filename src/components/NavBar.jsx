@@ -27,7 +27,12 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" style={{
+      backgroundImage: `url("https://i.imgur.com/hcL82fr.png")`,
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover'
+    }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -66,7 +71,7 @@ const NavBar = () => {
               ))}
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1,gap:2, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, gap: 2, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}

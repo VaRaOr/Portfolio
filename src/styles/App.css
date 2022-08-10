@@ -1,4 +1,8 @@
 .App {
   margin: 0;
   padding:0;
+  background-image: url('https://i.imgur.com/hcL82fr.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
