@@ -34,17 +34,17 @@ export default function MediaCard({ item }) {
                 alt={item.name}
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div" textAlign={'center'}>
+                <Typography gutterBottom variant="h5" component="div" style={{fontFamily:'"Poppins", sans-serif', fontSize:'1.5rem'}} textAlign={'center'}>
                     {item.name}
                 </Typography>
 
             </CardContent>
             <CardActions style={{ justifyContent: 'center', paddingTop: '0' }} >
-                <Button size="small">
-                <a href='https://github.com/lucianarossa/Boxbonny-React/tree/master' target="_blank" rel="noopener noreferrer" >CODE</a>
+                <Button size="small" style={{fontFamily:'"Raleway", sans-serif', fontSize:'1rem', fontStyle:'oblique', fontWeight:'bold'}}>
+                <a href={item.url} target="_blank" rel="noopener noreferrer" >Url</a>
                 </Button>
                 <>
-                    <Button onClick={handleOpen} size="small">Web</Button>
+                    <Button onClick={handleOpen} size="small" style={{fontFamily:'"Raleway", sans-serif', fontSize:'1rem', fontStyle:'oblique', fontWeight:'bold'}}>Web</Button>
                     <Modal
                         open={open}
                         onClose={handleClose}
@@ -53,7 +53,7 @@ export default function MediaCard({ item }) {
                         
                     >
                     <Box sx={style} style={{borderRadius:'10px'}} >
-                    <iframe src="https://boxbonny.herokuapp.com/" title="W3Schools Free Online Web Tutorials" style={{width:'100%', borderRadius:'10px'}} />
+                    <iframe src={item.url} title={item.name} style={{width:'100%', borderRadius:'10px'}} />
                     </Box>
                     </Modal>
                 </>
