@@ -39,7 +39,10 @@ function App() {
 
       <div className='glass' style={{ marginTop: '3rem' }}>
         <div className='proyContainer'>
+        
           <h2 id='about'>Contacto</h2>
+        
+          <h4 style={{color:'white', fontFamily:'Raleway'}} >Enviame un mensaje</h4>
           <ContactUs/>
         </div>
 
