@@ -28,7 +28,7 @@ font-family: 'Raleway', sans-serif; */
     flex-direction: column;
 }
 .text{
-    background-color: rgba(0, 0, 0, 0.656);
+    /* background-color: rgba(0, 0, 0, 0.656); */
     display: flex;
     flex-direction: column;
     color: white;
@@ -38,7 +38,7 @@ font-family: 'Raleway', sans-serif; */
 }
 .buttonContainer{
     display: flex;
-    background-color: beige;
+    /* background-color: beige; */
     height: 5rem;
     width: 10rem;
     gap: 10px;
@@ -50,9 +50,14 @@ font-family: 'Raleway', sans-serif; */
 .buttonM{
     display: flex;
     border-radius: 30%;
-    border: 3px solid black;
+    background-color: white;
+    border: 3px solid rgb(255, 255, 255);
     padding: 5px;
 }
 #mainphoto{
     z-index: -1;
+}
+.buttonM:hover{
+    background-color:#08fdd8;
+    border: #08fdd8 7px solid
 }

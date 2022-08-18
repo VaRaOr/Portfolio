@@ -9,9 +9,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+// import '../styles/navbar.css'
 
-const pages = ['Proyectos', 'Sobre mi', 'Tecnologías'];
 
+const pages = [{name:'Sobre mi', to:"#About"}, {name:'Tecnologías', to:"#Technologies"}, {name:'Proyectos', to:"#Projects"}, {name:'Contacto', to:'#Contact'}];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -28,13 +29,13 @@ const NavBar = () => {
 
   return (
     <AppBar position="fixed" style={{
-      backgroundImage: `url("https://i.imgur.com/hcL82fr.png")`,
+      backgroundColor:'#181818',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover'
     }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+      <Container maxWidth="xl" >
+        <Toolbar disableGutters >
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -66,7 +67,9 @@ const NavBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <a href={page.to}>
+                  <Typography textAlign="center">{page.name}</Typography>
+                </a>
                 </MenuItem>
               ))}
             </Menu>
@@ -77,8 +80,9 @@ const NavBar = () => {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                href={page.to}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>

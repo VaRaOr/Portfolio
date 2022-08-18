@@ -7,9 +7,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 function Main() {
   return (
     <div className='MainContainer'>
+    <div className='glass'> 
+    
       <div className='text'>
         <h1>Ortiña Valentin</h1>
-        <h3>Desarrolador Full-stack MERN & Mobile Apps</h3>
+        <h3 style={{color:'#08fdd8'}}>Desarrolador Full-stack MERN & Mobile Apps</h3>
         <div className='buttonContainer'>
 
         <a href='https://www.linkedin.com/in/valentinorti%C3%B1a1502/' target="_blank" rel="noopener noreferrer" style={{color:'black'}}>
@@ -29,6 +31,8 @@ function Main() {
           </div>
           </a>
         </div>
+      {/* <img src='https://i.imgur.com/C0PS6K9.gif' style={{height:'auto',  width:'3rem', borderRadius:'50%'}} /> */}
+      </div>
       </div>
     </div>
   )

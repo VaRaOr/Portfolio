@@ -48,8 +48,12 @@
 .button {
   font-family: inherit;
   font-size: 20px;
-  background: royalblue;
-  color: white;
+  background: #08fdd8;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+
   padding: 0.7em 1em;
   padding-left: 0.9em;
   display: flex;

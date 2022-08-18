@@ -19,14 +19,14 @@ const style = {
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
-  };
+};
 
 export default function MediaCard({ item }) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, backgroundColor: '#1d1d1d', color: 'white' }}>
             <CardMedia
                 component="img"
                 height="200"
@@ -34,27 +34,27 @@ export default function MediaCard({ item }) {
                 alt={item.name}
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div" style={{fontFamily:'"Poppins", sans-serif', fontSize:'1.5rem'}} textAlign={'center'}>
+                <Typography gutterBottom variant="h5" component="div" style={{ fontFamily: '"Poppins", sans-serif', fontSize: '1.5rem' }} textAlign={'center'}>
                     {item.name}
                 </Typography>
 
             </CardContent>
-            <CardActions style={{ justifyContent: 'center', paddingTop: '0' }} >
-                <Button size="small" style={{fontFamily:'"Raleway", sans-serif', fontSize:'1rem', fontStyle:'oblique', fontWeight:'bold'}}>
-                <a href={item.url} target="_blank" rel="noopener noreferrer" >Url</a>
+            <CardActions style={{ justifyContent: 'center', paddingTop: '0', }} >
+                <Button size="small" style={{ fontFamily: '"Raleway", sans-serif', fontSize: '1rem', fontStyle: 'oblique', fontWeight: 'bold' }}>
+                    <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ color: '#08fdd8' }} >Url</a>
                 </Button>
                 <>
-                    <Button onClick={handleOpen} size="small" style={{fontFamily:'"Raleway", sans-serif', fontSize:'1rem', fontStyle:'oblique', fontWeight:'bold'}}>Web</Button>
+                    <Button onClick={handleOpen} size="small" style={{ fontFamily: '"Raleway", sans-serif', fontSize: '1rem', fontStyle: 'oblique', fontWeight: 'bold', color: '#08fdd8' }}>Web</Button>
                     <Modal
                         open={open}
                         onClose={handleClose}
                         aria-labelledby="modal-modal-title"
                         aria-describedby="modal-modal-description"
-                        
+
                     >
-                    <Box sx={style} style={{borderRadius:'10px'}} >
-                    <iframe src={item.url} title={item.name} style={{width:'100%', borderRadius:'10px'}} />
-                    </Box>
+                        <Box sx={style} style={{ borderRadius: '10px' }} >
+                            <iframe src={item.url} title={item.name} style={{ width: '100%', borderRadius: '10px' }} />
+                        </Box>
                     </Modal>
                 </>
             </CardActions>

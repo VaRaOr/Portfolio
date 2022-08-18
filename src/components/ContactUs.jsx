@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/style.css'
+import { toast } from 'react-toastify'
+
 export const ContactUs = () => {
   const form = useRef();
 
@@ -10,8 +12,12 @@ export const ContactUs = () => {
     emailjs.sendForm('service_obfzy8s', 'template_hgge812', form.current, 'dI4Ae3szKK-DX0i9C')
       .then((result) => {
         console.log(result.text);
+        toast.success('Se envio correctamente')
+
       }, (error) => {
         console.log(error.text);
+        toast.error('Error 500')
+
       });
     e.target.reset()
   };
