@@ -35,3 +35,38 @@
   text-align: center !important;
   margin-top: 1rem;
 }
+
+
+@media (max-width: 500px){
+  .divTech{
+    width: 90%;
+  }
+  
+}
+@media (max-width: 445px){
+  .divTech{
+    width: 90%;
+  }
+  .imgTech{
+    width: 5rem;
+  }
+  
+}
+@media (max-width: 356px){
+  .divTech{
+    width: 90%;
+  }
+  .imgTech{
+    width: 4rem;
+  }
+  
+}
+@media (max-width: 330px){
+  .divTech{
+    width: 100%;
+  }
+  .imgTech{
+    width: 3.5rem;
+  }
+  
+}

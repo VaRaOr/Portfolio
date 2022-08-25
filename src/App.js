@@ -8,11 +8,9 @@ import data from './JSON/data.json'
 import { ContactUs } from './components/ContactUs';
 import ScrollToTop from 'react-scroll-to-top';
 import ArrowDropUpRoundedIcon from "@mui/icons-material/ArrowDropUpRounded";
-// import ReactPlayer from "react-player"
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import gigachat from './assets/gigachat.mp3'
-// import Audio from './components/Audio'
+
 function App() {
 
   return (
@@ -20,12 +18,14 @@ function App() {
       <NavBar />
       <Main />
 
-      <div className='glass' style={{ alignItems: 'center', marginBottom: '3rem' }} >
+      {/* <div className='glass' style={{ alignItems: 'center', marginBottom: '3rem' }} >
         <h2 id='about'>Reproducir</h2>
         <h4 style={{ color: 'white', fontFamily: 'Raleway' }}>Para el momento epico</h4>
-        <iframe style={{ paddingTop: '3rem' }} title='Bring Me the horizon' width="80%" height="133" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/399382389&color=%23454645&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-       
-      </div>
+        <iframe style={{ marginTop: '3rem', borderRadius:"12px" }} title='Bring Me the horizon' width="80%" height="133" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/399382389&color=%23454645&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      </div> */}
+
+      
+      
 
       <div className='glass' id="About">
         <About />

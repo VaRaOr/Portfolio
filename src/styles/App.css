@@ -123,3 +123,13 @@ a {
   width: 20rem;
   height: 10rem;
 } */
+
+
+@media (max-width: 420px) {
+  
+  #about {
+    font-size: 2rem !important;
+    padding-top: 0.1rem !important;
+  }
+  
+}

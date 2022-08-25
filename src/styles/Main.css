@@ -4,6 +4,7 @@ font-family: 'Raleway', sans-serif; */
     font-family: 'Poppins', sans-serif;
     font-size: 6rem;
     margin: 0;
+    text-align: center;
 }
 .text > h3{
     font-family: 'Raleway', sans-serif;
@@ -11,7 +12,7 @@ font-family: 'Raleway', sans-serif; */
     font-size: 3rem;
     margin: 0;
     padding: 1rem;
-
+    text-align: center;
 }
 
 
@@ -60,4 +61,24 @@ font-family: 'Raleway', sans-serif; */
 .buttonM:hover{
     background-color:#08fdd8;
     border: #08fdd8 7px solid
+}
+
+
+@media (max-width: 655px) {
+    .text > h1{
+        font-size: 4rem;
+    }
+    .text > h3{
+        font-size: 2rem;
+    }
+    
+}
+@media (max-width: 450px) {
+    .text > h1{
+        font-size: 3.5rem;
+    }
+    .text > h3{
+        font-size: 1.5rem;
+    }
+    
 }
